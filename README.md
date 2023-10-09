@@ -6,22 +6,21 @@ Welcome to Chrome-Encrypt-String :)
 
 Install the Chrome extionsion from the Chrome Web Store.
 
-Navigate to any tab with a valid input tab.
+Navigate to any tab with a valid input field.
 
-** List of valid input: [text, password, number, email, tel, url, search, date, datetime, datetime-local, time, month, week] **
+Highlight text from an input field.
 
-Highlight the text from the input field.
-
-Press Ctrl+Shift+E on the keyboard and watch the input value change to an all caps, MD5 encrypted string.
+Press Ctrl+Shift+E and watch the input value change to an all caps, MD5 encrypted string.
 
 Your string is also copied to the clipboard.
 
+** List of valid input fields: [text, password, number, email, tel, url, search, date, datetime, datetime-local, time, month, week] **
+
 ### Potential Gotchas
 
-Some websites run custom javascript to prevent tampering with forms. So you may run this command and see your input text change but it is not certain that the form submit handlers will use the new value.
+Some websites run custom javascript to prevent tampering with forms. Therefore, you may run this command and see your input text change, but it is not certain that the form submit handler will use the new value.
 
-This is the purpose of the copy value to clipboard, in case the form does not allow the extension to replace the value. You can manually paste the value in with one additionally Ctrl+V / Cmnd+V
-
+Therefore, the value is copied to the clipboard, in case the form submit does not use the extionsion replaced value. You can manually paste the value with one additional press of Ctrl+V / Cmnd+V.
 
 ## Authors
 
