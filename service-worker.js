@@ -1,8 +1,6 @@
 chrome.commands.onCommand.addListener( async (command) => {
     if (command === 'encrypt-string') {
         console.log('run content-script');
-        // const a = CryptoJS.MD5('abcd');
-        // const ac = a.toString(CryptoJS.enc.MD5)
         const currentTab = await getTab()
             .then((tabs) => {
                 if (tabs[0]) {
@@ -18,12 +16,10 @@ chrome.commands.onCommand.addListener( async (command) => {
                 files: ['scripts/content.js']
             });
         }
-        // Run script to encrypt the selected string
+
         // TODO: 
-        // --> Successfully import CryptoJS to content-script or service worker
-        // --> :)) everyone is happy
         // --> Incorporate different methods of encrypting
-        // --> Incportate all caps or lower
+        // --> Incportate all caps, all lower, or both.
         // --> Incorporate salt
     }
 })

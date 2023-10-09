@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "Chrome encrypt string",
+    "name": "Chrome-Encrypt-String",
     "version": "1.0.0",
     "description": "In browser tool to encrypt string with keyboard shortcut",
     "author": "FrankieDevs",
